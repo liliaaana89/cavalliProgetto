@@ -21,7 +21,9 @@ public class Main {
             cavalli[i] = new Cavallo(nome, lunghezzaPercorso);
         }
 
-        System.out.println("\n--- INIZIO GARA ---");
+        System.out.println();
+        System.out.println("--- INIZIO GARA ---");
+        System.out.println();
 
         for (int i = 0; i < numeroCavalli; i++) {
             cavalli[i].start();
@@ -31,6 +33,7 @@ public class Main {
             cavalli[i].join();
         }
 
+        System.out.println();
         System.out.println("-> gara terminata <-");
         scanner.close();
     }
